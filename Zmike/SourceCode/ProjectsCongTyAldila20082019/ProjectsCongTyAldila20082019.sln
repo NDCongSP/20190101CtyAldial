@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServer", "WebServer\WebServer.csproj", "{19DA9D4C-B828-47FF-8129-EDC381D78D50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test", "test\test.csproj", "{AFDE0AD5-C824-4B17-B96B-61C6CFAA716A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudServer", "CloudServer\CloudServer.csproj", "{6EC55CDD-FDE3-4BA5-83E9-45C769D27EDB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19DA9D4C-B828-47FF-8129-EDC381D78D50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19DA9D4C-B828-47FF-8129-EDC381D78D50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19DA9D4C-B828-47FF-8129-EDC381D78D50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19DA9D4C-B828-47FF-8129-EDC381D78D50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFDE0AD5-C824-4B17-B96B-61C6CFAA716A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFDE0AD5-C824-4B17-B96B-61C6CFAA716A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFDE0AD5-C824-4B17-B96B-61C6CFAA716A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFDE0AD5-C824-4B17-B96B-61C6CFAA716A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EC55CDD-FDE3-4BA5-83E9-45C769D27EDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EC55CDD-FDE3-4BA5-83E9-45C769D27EDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EC55CDD-FDE3-4BA5-83E9-45C769D27EDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EC55CDD-FDE3-4BA5-83E9-45C769D27EDB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4F82502A-28D8-4A43-AC3C-387C1FCB524A}
+	EndGlobalSection
+EndGlobal

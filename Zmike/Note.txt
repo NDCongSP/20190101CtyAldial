@@ -1,0 +1,15 @@
+dung giai phap cloudBased ATScada
+dùng  giải pháp cloudbases ATScada
+1. phan mem duoi may:
+	AppLocal
+		Aldila_Form
+2.Phan mem tren server:
+	- appCloud
+	- webServer
+	-luu du lieu vao 2 DB:
+		access
+		SQL server 2017
+
+3.Phần mềm dưới máy có licesce
+	- tạo License với pass = ATPro9999
+		+nội dung license: OD Machine No.01
