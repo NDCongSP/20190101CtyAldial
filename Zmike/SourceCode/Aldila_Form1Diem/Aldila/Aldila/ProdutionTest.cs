@@ -475,12 +475,15 @@ namespace Aldila
                                     switch (saveData)
                                     {
                                         case 1:
-                                            DataTable dt = sql.selectdatatheocot("DatalogZMike", "ShaftNum", "where MeasType='" + cbb_pos1.Text.Trim() + "' and Part = '" + bienchung.part + "' and WorkOrder='" + bienchung.workorder + "' and ShaftType='5' and DateTime >='" + DateTime.Now.ToString("yyyy-MM-dd 00:00:00.0") + "' and DateTime <='" + DateTime.Now.ToString("yyyy-MM-dd 23:59:59.999") + "'");
+                                            DataTable dt = sql.selectdatatheocot("DatalogZMike", "ShaftNum", "where MeasType='" + cbb_pos1.Text.Trim() 
+                                                + "' and Part = '" + bienchung.part + "' and WorkOrder='" + $"{bienchung.workorder}{bienchung.AddStringIntoWork}" + "' and ShaftType='5' and DateTime >='" + DateTime.Now.ToString("yyyy-MM-dd 00:00:00.0") + "' and DateTime <='" + DateTime.Now.ToString("yyyy-MM-dd 23:59:59.999") + "'");
                                             if (dt != null)
                                             {
                                                 if (dt.Rows.Count < 5)
                                                 {
-                                                    if (sql.themData("DatalogZMike", "values('" + bienchung.tenMay + "','" + (dt.Rows.Count + 1).ToString() + "',getdate(),'" + bienchung.part + "','" + cbb_pos1.Text.Trim() + "','" + bienchung.workorder + "','" + Diameter1.ToString() + "','" + ((Max1 - Min1) / 2).ToString("0.000") + "','" + Max1.ToString("0.000") + "','" + Min1.ToString("0.000") + "','" + rowDataS1[2] + "','" + rowDataS1[1] + "','" + rowDataS1[4] + "','" + rowDataS1[3] + "','" + result1 + "','" + bienchung.buildtype + "','5')") != "GOOD")
+                                                    if (sql.themData("DatalogZMike", "values('" + bienchung.tenMay + "','" + (dt.Rows.Count + 1).ToString() 
+                                                        + "',getdate(),'" + bienchung.part + "','" + cbb_pos1.Text.Trim() + "','" 
+                                                        + $"{bienchung.workorder}{bienchung.AddStringIntoWork}" + "','" + Diameter1.ToString() + "','" + ((Max1 - Min1) / 2).ToString("0.000") + "','" + Max1.ToString("0.000") + "','" + Min1.ToString("0.000") + "','" + rowDataS1[2] + "','" + rowDataS1[1] + "','" + rowDataS1[4] + "','" + rowDataS1[3] + "','" + result1 + "','" + bienchung.buildtype + "','5')") != "GOOD")
                                                     {
                                                         sukien.Onthongbao();
                                                     }
@@ -498,10 +501,13 @@ namespace Aldila
                                             }
                                             break;
                                         case 2:
-                                            DataTable dt1 = sql.selectdatatheocot("DatalogZMike", "ShaftNum", "where MeasType='" + cbb_pos1.Text.Trim() + "' and Part = '" + bienchung.part + "' and WorkOrder='" + bienchung.workorder + "' and ShaftType='all' and DateTime >='" + DateTime.Now.ToString("yyyy-MM-dd 00:00:00.0") + "' and DateTime <='" + DateTime.Now.ToString("yyyy-MM-dd 23:59:59.999") + "'");
+                                            DataTable dt1 = sql.selectdatatheocot("DatalogZMike", "ShaftNum", "where MeasType='" + cbb_pos1.Text.Trim() 
+                                                + "' and Part = '" + bienchung.part + "' and WorkOrder='" + $"{bienchung.workorder}{bienchung.AddStringIntoWork}" + "' and ShaftType='all' and DateTime >='" + DateTime.Now.ToString("yyyy-MM-dd 00:00:00.0") + "' and DateTime <='" + DateTime.Now.ToString("yyyy-MM-dd 23:59:59.999") + "'");
                                             if (dt1 != null)
                                             {
-                                                if (sql.themData("DatalogZMike", "values('" + bienchung.tenMay + "','" + (dt1.Rows.Count + 1).ToString() + "',getdate(),'" + bienchung.part + "','" + cbb_pos1.Text.Trim() + "','" + bienchung.workorder + "','" + Diameter1.ToString() + "','" + ((Max1 - Min1) / 2).ToString("0.000") + "','" + Max1.ToString("0.000") + "','" + Min1.ToString("0.000") + "','" + rowDataS1[2] + "','" + rowDataS1[1] + "','" + rowDataS1[4] + "','" + rowDataS1[3] + "','" + result1 + "','" + bienchung.buildtype + "','all')") != "GOOD")
+                                                if (sql.themData("DatalogZMike", "values('" + bienchung.tenMay + "','" + (dt1.Rows.Count + 1).ToString() 
+                                                    + "',getdate(),'" + bienchung.part + "','" + cbb_pos1.Text.Trim() + "','" 
+                                                    + $"{bienchung.workorder}{bienchung.AddStringIntoWork}" + "','" + Diameter1.ToString() + "','" + ((Max1 - Min1) / 2).ToString("0.000") + "','" + Max1.ToString("0.000") + "','" + Min1.ToString("0.000") + "','" + rowDataS1[2] + "','" + rowDataS1[1] + "','" + rowDataS1[4] + "','" + rowDataS1[3] + "','" + result1 + "','" + bienchung.buildtype + "','all')") != "GOOD")
                                                 {
                                                     sukien.Onthongbao();
                                                 }

@@ -20,5 +20,6 @@ namespace Aldila
         public static string tenMay = "", tenTask = "",key="",ipcloud="";
         public static string chuoiKetNoiSqlServer = "";
         public static double offset = 0;
+        public static string AddStringIntoWork { get; set; }
     }
 }

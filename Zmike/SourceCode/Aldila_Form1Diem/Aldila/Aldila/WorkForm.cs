@@ -61,6 +61,7 @@ namespace Aldila
             bienchung.chuoiKetNoiSqlServer = ConfigurationManager.AppSettings["SqlConstring"];
             bienchung.offset = Convert.ToDouble(ConfigurationManager.AppSettings["Offset"]);
             bienchung.resetNewTime = Convert.ToInt16(ConfigurationManager.AppSettings["ResetNewTime"]);
+            bienchung.AddStringIntoWork = ConfigurationManager.AppSettings["AddStringIntoWork"];
 
 
             this.Text = "OD            Test Station: " + bienchung.tenMay+ "           Connect To SQL Server " + bienchung.ipcloud; 

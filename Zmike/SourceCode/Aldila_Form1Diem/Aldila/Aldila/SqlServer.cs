@@ -42,7 +42,10 @@ namespace Aldila
                 connect.Dispose();
                 return ds;
             }
-            catch { return null; }
+            catch(Exception ex)
+            {
+                return null;
+            }
         }
         public string  selectdatatheoid(string tenbang, string tencotGiatri, string tencotID,string giatri)
         {
